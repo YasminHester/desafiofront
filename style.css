@@ -228,3 +228,33 @@ button:active { transform: translateY(1px); }
   font-size: 11px;
 }
 .rodape a { color: var(--verde-medio); }
+
+@media (max-width: 600px) {
+  body { padding: 24px; }
+  .pagina { min-height: auto; }
+  .cartao { padding: 24px; border-radius: 12px; }
+  h1 { margin-bottom: 28px; font-size: 30px; }
+  .campos-nome, .opcoes-contato { grid-template-columns: 1fr; gap: 22px; }
+  .opcoes-contato { gap: 12px; }
+  form { gap: 22px; }
+  textarea { min-height: 180px; }
+  .controle-consentimento { align-items: flex-start; gap: 12px; }
+}
+
+/* Melhorias de acessibilidade */
+.mensagem-sucesso:focus-visible {
+  outline: 3px solid var(--verde-medio);
+  outline-offset: 4px;
+}
+
+.grupo-radio[aria-invalid="true"] .opcao {
+  border-color: var(--vermelho);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
