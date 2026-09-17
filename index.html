@@ -57,6 +57,25 @@
           <p class="erro" id="erro-tipo-contato" role="alert"></p>
         </fieldset>
 
+        <div class="campo">
+          <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+          <textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem"></textarea>
+          <p class="erro" id="erro-mensagem" role="alert"></p>
+        </div>
+
+        <div class="campo campo-consentimento">
+          <div class="controle-consentimento">
+            <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
+            <label for="consentimento">Concordo em ser contatado pela equipe <span aria-hidden="true">*</span></label>
+          </div>
+          <p class="erro" id="erro-consentimento" role="alert"></p>
+        </div>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
   <footer class="rodape">
     Desafio proposto por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
     Desenvolvido por <a href="#">Yasmin</a>.
