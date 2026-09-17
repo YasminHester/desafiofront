@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+:root {
+  --verde-claro: hsl(148, 38%, 91%);
+  --verde-medio: hsl(169, 82%, 27%);
+  --verde-escuro: hsl(169, 82%, 20%);
+  --vermelho: hsl(0, 66%, 54%);
+  --cinza-medio: hsl(186, 15%, 59%);
+  --cinza-escuro: hsl(187, 24%, 22%);
+  --branco: hsl(0, 0%, 100%);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  background: var(--verde-claro);
+  color: var(--cinza-escuro);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.pagina {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  place-items: center;
+}
+
+.cartao {
+  width: min(100%, 736px);
+  padding: 38px 40px 40px;
+  background: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .03);
+}
