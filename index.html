@@ -21,61 +21,7 @@
         <p>Obrigado por preencher o formulário. Em breve entraremos em contato.</p>
       </div>
 
-      <form id="formulario-contato" novalidate>
-        <div class="campos-nome">
-          <div class="campo">
-            <label for="nome">Nome <span aria-hidden="true">*</span></label>
-            <input id="nome" name="nome" type="text" autocomplete="given-name" required aria-describedby="erro-nome">
-            <p class="erro" id="erro-nome" role="alert"></p>
-          </div>
-
-          <div class="campo">
-            <label for="sobrenome">Sobrenome <span aria-hidden="true">*</span></label>
-            <input id="sobrenome" name="sobrenome" type="text" autocomplete="family-name" required aria-describedby="erro-sobrenome">
-            <p class="erro" id="erro-sobrenome" role="alert"></p>
-          </div>
-        </div>
-
-        <div class="campo">
-          <label for="email">Endereço de e-mail <span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email">
-          <p class="erro" id="erro-email" role="alert"></p>
-        </div>
-
-        <fieldset class="campo grupo-radio" aria-describedby="erro-tipo-contato">
-          <legend>Tipo de contato <span aria-hidden="true">*</span></legend>
-          <div class="opcoes-contato">
-            <label class="opcao" for="duvida">
-              <input id="duvida" name="tipoContato" type="radio" value="Dúvida geral" required>
-              <span>Dúvida geral</span>
-            </label>
-            <label class="opcao" for="suporte">
-              <input id="suporte" name="tipoContato" type="radio" value="Solicitação de suporte">
-              <span>Solicitação de suporte</span>
-            </label>
-          </div>
-          <p class="erro" id="erro-tipo-contato" role="alert"></p>
-        </fieldset>
-
-        <div class="campo">
-          <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
-          <textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem"></textarea>
-          <p class="erro" id="erro-mensagem" role="alert"></p>
-        </div>
-
-        <div class="campo campo-consentimento">
-          <div class="controle-consentimento">
-            <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
-            <label for="consentimento">Concordo em ser contatado pela equipe <span aria-hidden="true">*</span></label>
-          </div>
-          <p class="erro" id="erro-consentimento" role="alert"></p>
-        </div>
-
-        <button type="submit">Enviar mensagem</button>
-      </form>
-    </section>
-  </main>
-
+      
   <footer class="rodape">
     Desafio proposto por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
     Desenvolvido por <a href="#">Yasmin</a>.
