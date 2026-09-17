@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário de contato acessível e responsivo">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Formulário de contato | Yasmin</title>
+</head>
+<body>
+  <main class="pagina">
+    <section class="cartao" aria-labelledby="titulo-formulario">
+      <h1 id="titulo-formulario">Entre em contato</h1>
+
+      <div id="mensagem-sucesso" class="mensagem-sucesso" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden>
+        <div class="cabecalho-sucesso">
+          <img src="./assets/images/icon-success-check.svg" alt="" aria-hidden="true">
+          <strong>Mensagem enviada!</strong>
+        </div>
+        <p>Obrigado por preencher o formulário. Em breve entraremos em contato.</p>
+      </div>
+
+      <form id="formulario-contato" novalidate>
+        <div class="campos-nome">
+          <div class="campo">
+            <label for="nome">Nome <span aria-hidden="true">*</span></label>
+            <input id="nome" name="nome" type="text" autocomplete="given-name" required aria-describedby="erro-nome">
+            <p class="erro" id="erro-nome" role="alert"></p>
+          </div>
+
+          <div class="campo">
+            <label for="sobrenome">Sobrenome <span aria-hidden="true">*</span></label>
+            <input id="sobrenome" name="sobrenome" type="text" autocomplete="family-name" required aria-describedby="erro-sobrenome">
+            <p class="erro" id="erro-sobrenome" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="email">Endereço de e-mail <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email">
+          <p class="erro" id="erro-email" role="alert"></p>
+        </div>
+
+        <fieldset class="campo grupo-radio" aria-describedby="erro-tipo-contato">
+          <legend>Tipo de contato <span aria-hidden="true">*</span></legend>
+          <div class="opcoes-contato">
+            <label class="opcao" for="duvida">
+              <input id="duvida" name="tipoContato" type="radio" value="Dúvida geral" required>
+              <span>Dúvida geral</span>
+            </label>
+            <label class="opcao" for="suporte">
+              <input id="suporte" name="tipoContato" type="radio" value="Solicitação de suporte">
+              <span>Solicitação de suporte</span>
+            </label>
+          </div>
+          <p class="erro" id="erro-tipo-contato" role="alert"></p>
+        </fieldset>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+          <textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem"></textarea>
+          <p class="erro" id="erro-mensagem" role="alert"></p>
+        </div>
+
+        <div class="campo campo-consentimento">
+          <div class="controle-consentimento">
+            <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
+            <label for="consentimento">Concordo em ser contatado pela equipe <span aria-hidden="true">*</span></label>
+          </div>
+          <p class="erro" id="erro-consentimento" role="alert"></p>
+        </div>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    Desafio proposto por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+    Desenvolvido por <a href="#">Yasmin</a>.
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
